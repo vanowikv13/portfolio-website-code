@@ -17,17 +17,28 @@ function clickView(name = 'cv.pdf') {
 //hide navbar at the begining
 $(".navbar").hide();
 
+//variable checking status for the navbar function
+var begining = false;
+
+//point of status where to hide element
+var point = 222;
+
 //show navbar when it's on the bootom and under image
-$(document).ready(function(){
-    window.onscroll = function() {
+$(document).ready(function () {
+    window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
         console.log(currentScrollPos);
-        if(currentScrollPos < 720.0)
-            $('.navbar').hide().removeClass('.navbar');
-        else{
-            if(window.pageYOffset > 720)
-                $('.navbar').delay(1200).show(1000).addClass('.navbar');
+        console.log(begining);
+        if (currentScrollPos < point)
+            $('.navbar').hide(1000);
+        else {
+            if (window.pageYOffset >= point) {
+                if (begining == false) {
+                    $('.navbar').delay(1200).show(1000);
+                    begining = true;
+                } else
+                    $('.navbar').show(1000);
+            }
         }
     }
 });
-
