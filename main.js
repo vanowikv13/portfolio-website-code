@@ -27,8 +27,8 @@ var point = 222;
 $(document).ready(function () {
     window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
-        console.log(currentScrollPos);
-        console.log(begining);
+        ///console.log(currentScrollPos);
+        ///console.log(begining);
         if (currentScrollPos < point)
             $('.navbar').hide(1000);
         else {

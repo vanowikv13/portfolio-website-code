@@ -88,9 +88,31 @@ a:link, a:link, a:visited, a:hover, a:active {
     color: #343a40;
 }
 
-#thirdButton {
-    margin-top: 44px;
+@media (min-width: 768px) {
+    #thirdButton {
+        margin-top: 66px;
+    }
+
 }
+
+@media (min-width: 768px) {
+#firstButton {
+    margin-top: 43px;
+}
+}
+
+@media (min-width: 992px) {
+    #firstButton {
+        margin-top: 21px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #thirdButton {
+        margin-top: 44px;
+    }
+}
+
 
 .project > a > button {
     margin-top: 20px;
@@ -127,5 +149,5 @@ footer > div >  h3 {
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    margin-top: 35px;
+    margin-top: 40px;
 }
