@@ -25,6 +25,7 @@ var point = 222;
 
 //show navbar when it's on the bootom and under image
 $(document).ready(function () {
+    //hide scroll bar on top
     window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
         ///console.log(currentScrollPos);
@@ -42,3 +43,19 @@ $(document).ready(function () {
         }
     }
 });
+
+//smooth scrolling
+$(document).ready(function() {
+	$('a[href^="#"]').on('click', function(event) {
+		var target = $( $(this).attr('href') );
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 800);
+		}
+	});
+
+});
+
+
