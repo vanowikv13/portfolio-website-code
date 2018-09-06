@@ -32,19 +32,26 @@ li > a {
 
 .scrollDown {
     margin-top: 200px;
-    color: #007bff !important;
+    color: white !important;
     font-size: 30px;
 }
 
 .scrollDown > i, .scollDown > p {
-    color: #007bff;
     margin-bottom: 0rem !important;
     padding: 0px;
+}
+
+a:hover > .scrollDown {
+    color: white;
 }
 
 #scroll {
     margin: 0px !important;
     font-size: 30px;
+}
+
+li > a:hover {
+    text-decoration: underline !important;
 }
 
 .CV {
@@ -87,9 +94,9 @@ a > .scrollDown  {
     color: white;
 }
 
-a:link, a:link, a:visited, a:hover, a:active {
+a:link, a:link, a:visited, a:active {
     text-align: center;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .project > a:link, a:visited, a:hover, a:active {
