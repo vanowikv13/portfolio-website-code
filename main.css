@@ -20,6 +20,7 @@ h3 {
 
 .contact {
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 footer {
@@ -135,15 +136,6 @@ a:link, a:link, a:visited, a:active {
     background-color: #343a40;
 }
 
-.linkAccount {
-    margin: auto;
-    background-color: #343a40;
-    height: 150px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width: 60px;;
-}
-
 .linkAccount > i, .linkAccount > a:link {
     font-size: 480%;
     text-align: center;
@@ -151,24 +143,8 @@ a:link, a:link, a:visited, a:active {
     color: white;
 }
 
-/*
-@media(min-width: 736px) {
-    .linkAccount > i, .linkAccount > a:link {
-    font-size: 480%;
-}
-
-@media(max-width: 736px) {
-    .linkAccount > i, .linkAccount > a:link {
-        font-size: 240%;
-}*/
-
-/*
-footer > div >  h3 {
-    margin-bottom: 0px !important;
-}*/
-
 .profiles {
-    margin-bottom: 5     0px;
+    margin-bottom: 5px;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -177,10 +153,15 @@ footer > div >  h3 {
 
 .profiles > div {
     margin-top: 0px !important;
+    font-size: 600%;
 }
 
-.profiles > h3 {
+#contact > h3 {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
 
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
