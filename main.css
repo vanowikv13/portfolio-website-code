@@ -55,14 +55,20 @@ li > a:hover {
     text-decoration: underline !important;
 }
 
-.CV {
-    width: 100%;
-}
-
 .CV > .buttons > button {
-    width: 331px;
     margin-bottom: 20px;
     padding: 10px;
+}
+
+@media(min-width: 438px) {
+    .CV > .buttons > button {
+        width: 330px;
+    }
+}
+@media(max-width: 437px) {
+    .CV > .buttons > button {
+        width: 200px;
+    }
 }
 
 projects {
