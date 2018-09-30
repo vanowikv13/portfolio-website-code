@@ -148,7 +148,7 @@ a:link, a:link, a:visited, a:active {
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .profiles > div {

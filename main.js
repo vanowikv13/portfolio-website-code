@@ -1,14 +1,28 @@
 //hide navbar at the begining
 $(".navbar").hide();
 
+//show and hide navbar button in right moment
+function navBtn() {
+    if(document.documentElement.clientWidth <= 560)
+        $('#btnNav').show();
+    else
+        $('#btnNav').hide();
+}
+
+$(document).ready(function (){
+    navBtn();
+    $(window).resize(function() {
+        navBtn();
+    })
+});
+
 //variable checking status for the navbar function
 var begining = false;
 
 //point of status where to hide element
 var point = 222;
 
-//write width of the website
-console.log(window.pageXOffset);
+
 
 //show navbar when it's on the bootom and under image
 $(document).ready(function () {
@@ -43,19 +57,14 @@ $(document).ready(function() {
 });
 
 
-
-//download pdf
-function clickDow(name = 'cv.pdf') {
+function cvAction(name = 'polish.pdf', download = true) {
     var link = document.createElement('a');
-    link.href = 'pdf/';
-    link.download = name;
-    link.dispatchEvent(new MouseEvent('click'));
-}
-
-//open pdf in new tab
-function clickView(name = 'cv.pdf') {
-    var link = document.createElement('a');
-    link.href = 'pdf/' + name;
-    link.target = '_blank'
+    if(download) {
+        link.href = 'pdf/';
+        link.download = name;
+    } else {
+        link.href = 'pdf/' + name;
+        link.target = '_blank'
+    }
     link.dispatchEvent(new MouseEvent('click'));
 }
